@@ -1,0 +1,88 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "用户名:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 45
+					"y": 65
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "密码:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 45
+					"y": 115
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "确认密码:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 45
+					"y": 165
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "host"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 120
+					"y": 65
+					"width": 200
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "password1"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 120
+					"y": 115
+					"width": 200
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "password2"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 120
+					"y": 165
+					"width": 200
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "confirm"
+					"text": "确认"
+					addEvent( new FormEvent( "java.awt.event.KeyListener", "keyPressed", "confirmKeyPressed", true ) )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "confirmMouseClicked", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 110
+					"y": 215
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "back"
+					"text": "返回"
+					addEvent( new FormEvent( "java.awt.event.KeyListener", "keyPressed", "backKeyPressed", true ) )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "backMouseClicked", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 230
+					"y": 215
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "用户注册"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 175
+					"y": 20
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 0
+				"y": 0
+				"width": 400
+				"height": 260
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 290 )
+		} )
+	}
+}
